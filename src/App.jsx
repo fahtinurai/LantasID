@@ -8,7 +8,7 @@ import Login from "./pages/Login";
 import Register from "./pages/Register";
 import WilayahDetail from "./pages/WilayahDetail";
 import CourseContent from "./pages/CourseContent";
-
+import LessonPage from "./pages/LessonPage";
 
 function App() {
    return (
@@ -23,6 +23,8 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
           <Route path="/courses/:id/content" element={<CourseContent />} />
+          <Route path="/courses/:id/lesson" element={<LessonPage />} />
+          <Route path="/courses/:id/lesson/:topicIndex" element={<LessonPage />} />
         </Route>
       </Routes>
     </BrowserRouter>

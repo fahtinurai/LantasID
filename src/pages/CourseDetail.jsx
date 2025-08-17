@@ -16,24 +16,27 @@ const CourseDetail = () => {
   return (
     <div className="w-full bg-white py-16 px-4 lg:px-16">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-3xl font-bold text-teal-700 mb-6">{course.title}</h2>
-
+        <h2 className="text-3xl font-bold text-teal-700 mb-6 text-center">
+          {course.title}
+        </h2>
         {/* Gambar default karena data tidak punya thumbnail */}
         <img
-          src={`https://placehold.co/800x300?text=${encodeURIComponent(course.title)}`}
+          src={course.thumbnail}
           alt={course.title}
-          className="mb-6 rounded-lg w-full"
+          className="mb-6 rounded-lg w-full max-w-3xl mx-auto"
         />
-
         <p className="text-gray-800 mb-6 text-lg leading-relaxed">{course.description}</p>
 
         <div className="bg-green-50 border border-green-200 rounded-xl p-6 mb-6">
           <p className="font-semibold text-teal-700 mb-2">Level: {course.level}</p>
           <p className="text-yellow-600 mb-4">Durasi: {course.duration}</p>
           <h4 className="font-semibold text-teal-700 mb-2">Konten Pelatihan:</h4>
-          <ul className="list-disc list-inside text-gray-700 space-y-1">
+          <ul className="space-y-3">
             {course.topics.map((item, index) => (
-              <li key={index}>{item}</li>
+              <li key={index} className="flex items-center gap-3">
+                <img src={item.image} alt={item.name} className="w-8 h-8 object-cover rounded-md" />
+                <span className="text-gray-700">{item.name}</span>
+              </li>
             ))}
           </ul>
         </div>

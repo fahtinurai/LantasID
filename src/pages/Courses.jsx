@@ -24,11 +24,14 @@ const Courses = () => {
                 <div className="p-5">
                   <p className="text-sm mb-4 text-gray-700">{course.description}</p>
                   <h4 className="font-semibold text-teal-700 mb-2">Yang akan dipelajari:</h4>
-                  <ul className="list-disc list-inside text-sm text-gray-800 mb-4 space-y-1">
-                    {course.topics.map((topic, i) => (
-                      <li key={i}>{topic}</li>
-                    ))}
-                  </ul>
+                  <ul className="space-y-2">
+                  {course.topics.map((topic, i) => (
+                    <li key={i} className="flex items-center gap-2">
+                      <img src={topic.image} alt={topic.name} className="w-6 h-6 object-cover rounded" />
+                      <span>{topic.name}</span>
+                    </li>
+                  ))}
+                </ul>
                   <div className="flex justify-between text-sm text-gray-600 mb-4">
                     <div>🕒 {course.duration}</div>
                     <div>📊 {course.level}</div>
