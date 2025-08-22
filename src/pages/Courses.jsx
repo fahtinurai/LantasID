@@ -5,7 +5,7 @@ const Courses = () => {
   return (
     <div className="bg-white py-16 px-4 lg:px-16">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-3xl font-bold text-teal-700 text-center mb-12">
+        <h2 className="text-3xl font-bold text-blue-500 text-center mb-12">
           Pelatihan Tersedia
         </h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -18,12 +18,12 @@ const Courses = () => {
               <div className="absolute inset-0 bg-white/30 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition duration-300 z-0 rounded-2xl" />
 
               <div className="relative z-10">
-                <div className="bg-teal-700 text-white p-4 font-semibold text-lg rounded-t-2xl">
+                <div className="bg-blue-500 text-white p-4 font-semibold text-lg rounded-t-2xl">
                   {course.title}
                 </div>
                 <div className="p-5">
                   <p className="text-sm mb-4 text-gray-700">{course.description}</p>
-                  <h4 className="font-semibold text-teal-700 mb-2">Yang akan dipelajari:</h4>
+                  <h4 className="font-semibold text-blue-500 mb-2">Yang akan dipelajari:</h4>
                   <ul className="space-y-2">
                   {course.topics.map((topic, i) => (
                     <li key={i} className="flex items-center gap-2">
@@ -37,21 +37,21 @@ const Courses = () => {
                     <div>📊 {course.level}</div>
                   </div>
 
-                  <div className="flex gap-3">
-                    <Link to="/login" className="flex-1">
-                    <button className="w-full border border-blue-100 text-blue-600 font-semibold py-2 rounded hover:bg-teal-50 transition duration-200 flex items-center justify-center gap-1">
-                      <span className="text-lg"></span> Mulai Belajar
-                    </button>
-                  </Link>
-                  
-                    <Link
-                      to={`/courses/${course.id}`}
-                      className="flex-1 bg-blue-500 hover:bg-teal-600 active:bg-teal-700 text-white hover:text-white font-semibold py-2 rounded transition duration-200 text-center"
-                    >
-                      Lihat Detail
-                    </Link>
-                  </div>
+                 <div className="flex gap-3">
+                {/* Mulai Belajar */}
+                <Link to="/login" className="flex-1">
+                  <button className="w-full bg-blue-500 text-white font-semibold py-2 rounded hover:bg-blue-600 transition duration-200 flex items-center justify-center">
+                    Mulai Belajar
+                  </button>
+                </Link>
 
+                {/* Lihat Detail */}
+                <Link to={`/courses/${course.id}`} className="flex-1">
+                  <button className="w-full border border-blue-500 text-blue-600 font-semibold py-2 rounded bg-transparent hover:bg-blue-50 transition duration-200 flex items-center justify-center">
+                    Lihat Detail
+                  </button>
+                </Link>
+                </div>
                 </div>
               </div>
             </div>

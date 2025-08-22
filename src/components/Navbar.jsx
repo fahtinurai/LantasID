@@ -2,30 +2,63 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <header className="bg-gradient-to-r from-teal-600 to-cyan-700 py-4 w-full">
-      <div className="max-w-7xl mx-auto flex justify-between items-center px-4">
+    <header className="bg-white w-full border-b shadow-sm">
+      <div className="max-w-7xl mx-auto flex justify-between items-center px-6 py-3">
+        {/* Logo */}
+        <Link to="/" className="flex items-center gap-2">
+          <img
+            src="/images/LogoLantasID.png"
+            alt="LantasID Logo"
+            className="h-20 w-auto" // logo lebih gede
+          />
+          <span className="text-gray-900 text-xl font-bold">
+            LantasID
+          </span>
+        </Link>
+
+        {/* Menu */}
+       <nav className="flex items-center space-x-4 md:space-x-6 text-sm md:text-base font-medium">
         <Link
           to="/"
-          className="text-white text-xl md:text-2xl font-extrabold flex items-center gap-2"
+          className="px-3 py-2 font-bold text-gray-800 hover:text-gray-900 hover:bg-gray-200/60 rounded-lg transition"
         >
-          <span role="img" aria-label="Graduation Cap">🎓</span> LantasID
+          Beranda
         </Link>
-        <nav className="space-x-4 md:space-x-8 text-sm md:text-base">
-          {[
-            { label: "Beranda", to: "/" },
-            { label: "Pelatihan", to: "/courses" },
-            { label: "Keuangan", to: "/dashboard" },
-            { label: "Account", to: "/login" }
-          ].map(({ label, to }) => (
-            <Link
-              key={to}
-              to={to}
-              className="text-white hover:text-white hover:bg-white/20 px-3 py-1 rounded transition"
-            >
-              {label}
-            </Link>
-          ))}
-        </nav>
+        <Link
+          to="/courses"
+          className="px-3 py-2 font-bold text-gray-800 hover:text-gray-900 hover:bg-gray-200/60 rounded-lg transition"
+        >
+          Pelatihan
+        </Link>
+        <Link
+          to="/financialliteracy"
+          className="px-3 py-2 font-bold text-gray-800 hover:text-gray-900 hover:bg-gray-200/60 rounded-lg transition"
+        >
+          Keuangan
+        </Link>
+        <Link
+          to="/about"
+          className="px-3 py-2 font-bold text-gray-800 hover:text-gray-900 hover:bg-gray-200/60 rounded-lg transition"
+        >
+          Tentang
+        </Link>
+
+        {/* Link Masuk */}
+        <Link
+          to="/login"
+          className="px-3 py-2 font-bold text-blue-600 hover:bg-gray-200/60 rounded-lg transition"
+        >
+          Masuk
+        </Link>
+
+        {/* Tombol Daftar Sekarang */}
+        <Link
+          to="/register"
+          className="bg-blue-600 font-bold text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition"
+        >
+          Daftar Sekarang
+        </Link>
+      </nav>
       </div>
     </header>
   );

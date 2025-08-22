@@ -17,15 +17,20 @@ const CourseContent = () => {
 
   return (
     <div className="bg-[#f4f4f4] py-12 px-4 md:px-12 lg:px-24">
-      {/* Tombol Kembali */}
-      <button
-        onClick={() => navigate(-1)}
-        className="px-4 py-2 bg-teal-600 text-white rounded hover:bg-teal-700 hover:text-white transition"
-      >
-        Kembali
-      </button>
+  {/* Tombol kembali */}
+        <div
+          onClick={() => window.history.back()}
+          className="mb-6 flex items-center gap-2 cursor-pointer group"
+        >
+          <span className="text-red-600 text-lg font-bold transition-transform duration-300 group-hover:-translate-x-2">
+            &lt;
+          </span>
+          <span className="text-black text-lg font-medium">
+            Kembali ke Daftar Pelatihan
+          </span>
+        </div>
 
-      <h2 className="text-3xl font-bold text-teal-700 text-center mb-12">
+      <h2 className="text-3xl font-bold text-blue-700 text-center mb-12">
         Yang Akan Dipelajari:{" "}
         <span className="text-gray-800">{course.title}</span>
       </h2>

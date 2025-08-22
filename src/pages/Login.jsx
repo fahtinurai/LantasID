@@ -7,7 +7,7 @@ const Login = () => {
     <AuthLayout>
       <div>
         <h2 className="text-2xl font-bold text-gray-800 text-center mb-2">Welcome Back</h2>
-        <p className="text-sm text-center text-gray-500 mb-6">Please enter your details</p>
+        <p className="text-sm text-center text-gray-500 mb-6">Masuk untuk melanjutkan perjalanan karirmu di LantasID.</p>
 
         <div className="flex justify-center mb-4">
           <button className="flex items-center gap-3 border border-teal bg-white text-black px-6 py-2 rounded-lg transition hover:bg-gray-100">
@@ -24,36 +24,57 @@ const Login = () => {
       <form className="space-y-5">
         {/* Email Field */}
         <div className="relative">
-          <FaEnvelope className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400" />
           <input
             type="email"
-            placeholder="Email Address"
-            className="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-150"
+            placeholder="Email"
+            className="w-full px-4 py-3 rounded-md 
+                      bg-white/70 border border-gray-300 
+                      text-gray-600 placeholder-gray-400 
+                      focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-blue-400 transition"
             required
           />
         </div>
 
         {/* Password Field */}
-        <div className="relative">
-          <FaLock className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400" />
+        <div className="relative mt-4">
           <input
             type="password"
             placeholder="Password"
-            className="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-150"
+            className="w-full px-4 py-3 rounded-md 
+                      bg-white/70 border border-gray-300 
+                      text-gray-600 placeholder-gray-400 
+                      focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-blue-400 transition"
             required
           />
+        </div>
+
+        {/* Lupa Password */}
+        <div className="flex justify-end mt-2">
+          <Link 
+            to="/forgot-password" 
+            className="text-sm text-blue-600 hover:underline"
+          >
+            Lupa Password?
+          </Link>
         </div>
 
         {/* Submit Button */}
         <button
           type="submit"
-          className="w-full bg-teal-600 text-white py-2 rounded-md font-semibold hover:bg-teal-700 transition duration-200"
+          className="w-full bg-blue-600 font-bold text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition duration-200"
         >
           Login
         </button>
-      </form>
+        </form>
 
-
+      {/* Link Register */}
+          <p className="text-xs text-center text-gray-500 mt-6">
+            Belum punya akun?{" "}
+            <Link to="/register" className="text-blue-600 font-medium hover:underline">
+              Masuk di sini
+            </Link>
+          </p>
+          
         <div className="flex items-center my-4">
           <hr className="flex-grow border-gray-300" />
           <span className="mx-2 text-gray-500 text-sm">Or Continue With</span>

@@ -4,15 +4,15 @@ const AuthLayout = ({ children }) => {
     <div className="flex min-h-screen">
       {/* Left Form Section */}
       <div className="w-full md:w-1/2 flex items-center justify-center bg-white px-6 py-12">
-        <div className="max-w-md w-full">{children}</div>
+        <div className="w-full max-w-md">{children}</div>
       </div>
 
       {/* Right Image Section */}
-      <div className="w-full px-1 py-1 border rounded-md bg-white text-gray-700">
+      <div className="hidden md:flex w-1/2">
         <img
-          src="/images/vault.jpg" // path ke public/images/vault.jpg
+          src="/images/vault.jpg"
           alt="Vault Illustration"
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover"  // 🔥 bikin gambar penuh & rata
         />
       </div>
     </div>

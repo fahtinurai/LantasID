@@ -73,7 +73,7 @@ const Landing = () => {
             <div className="text-center md:text-left md:max-w-xl">
             <h1 className="text-3xl md:text-5xl font-extrabold text-gray-900 leading-tight">
               Latih Skill, Atasi Masalah,<br />
-              Sejahtera Bersama <span className="text-teal-600">LantasID.</span>
+              Sejahtera Bersama <span className="text-blue-600">LantasID.</span>
             </h1>
             <p className="mt-4 text-gray-600 text-base md:text-lg font-medium">
               <strong>Latih</strong>, <strong>A</strong>tasi kemiskinan, <strong>N</strong>gatur keuangan,
@@ -118,9 +118,9 @@ const Landing = () => {
               <Link
                 to={`/wilayah/${toSlug(loc.title)}`}
                 key={loc.id}
-                className="bg-white rounded-xl p-6 shadow-md hover:shadow-xl transform hover:-translate-y-1 transition duration-300 cursor-pointer border-2 border-transparent hover:border-teal-600 block"
+                className="bg-white rounded-xl p-6 shadow-md hover:shadow-xl transform hover:-translate-y-1 transition duration-300 cursor-pointer border-2 border-transparent hover:border-blue-600 block"
               >
-                <h3 className="text-xl font-bold text-teal-700 mb-2">{loc.title}</h3>
+                <h3 className="text-xl font-bold text-blue-700 mb-2">{loc.title}</h3>
                 <p className="text-sm mb-1 text-gray-800">
                   <strong className="font-semibold">Potensi:</strong> {loc.potensi}
                 </p>
@@ -136,7 +136,7 @@ const Landing = () => {
       {/* Fitur Keunggulan Section */}
       <section className="bg-[#fdfaf8] text-gray-900 py-16">
         <div className="w-full px-4 md:px-8 lg:px-16">
-          <h2 className="text-3xl font-bold text-teal-700 text-center mb-10">
+          <h2 className="text-3xl font-bold text-blue-700 text-center mb-10">
             Keunggulan Platform
           </h2>
           <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-6">
@@ -145,7 +145,7 @@ const Landing = () => {
                 key={idx}
                 className="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transform hover:-translate-y-1 transition duration-300 text-center"
               >
-                <div className="text-4xl bg-teal-700 text-white w-16 h-16 mx-auto flex items-center justify-center rounded-full mb-4">
+                <div className="text-4xl bg-blue-700 text-white w-16 h-16 mx-auto flex items-center justify-center rounded-full mb-4">
                   {item.icon}
                 </div>
                 <h3 className="text-xl font-bold mb-2">{item.title}</h3>
@@ -162,7 +162,7 @@ const Landing = () => {
           {/* Gambar + background elemen */}
           <div className="relative w-full md:w-1/2">
             {/* Shape biru di belakang */}
-            <div className="absolute bottom-[-20px] right-[-50px] w-[120px] h-[100px] bg-cyan-500 
+            <div className="absolute bottom-[-20px] right-[-50px] w-[120px] h-[100px] bg-blue-500 
   rounded-tr-[16px] rounded-bl-[16px] z-0"></div>
 
             {/* Gambar utama */}
@@ -176,7 +176,7 @@ const Landing = () => {
           {/* Teks */}
           <div className="w-full md:w-1/2">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Tentang <span className="text-cyan-600">LantasID</span>
+              Tentang <span className="text-blue-600">LantasID</span>
             </h2>
             <p className="text-gray-700 leading-relaxed text-justify">
               LantasID adalah platform terpadu yang lahir dari sebuah tekad untuk memutus mata rantai kemiskinan melalui peningkatan keterampilan dan literasi keuangan. Kami percaya bahwa setiap individu berhak mendapatkan kesempatan untuk sejahtera. Melalui pelatihan yang relevan, koneksi ke dunia kerja, dan pemahaman finansial yang kuat, kami mengajak Anda untuk beraksi dan membangun masa depan yang lebih cerah.

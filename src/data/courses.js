@@ -39,23 +39,28 @@ export const courses = [
       sections: [
         {
           subtitle: "Pengantar",
-          description: "Selamat datang di kursus Desain Grafis Profesional! Kursus ini dirancang untuk membekali peserta dengan pengetahuan dan keterampilan praktis sesuai kebutuhan industri di wilayah Bandung."
+          description: "Selamat datang di kursus Desain Grafis Profesional! Kursus ini dirancang untuk membekali peserta dengan pengetahuan dan keterampilan praktis sesuai kebutuhan industri di wilayah Bandung.",
+          detail: "Kursus ini akan membahas berbagai aspek penting dalam desain grafis, mulai dari penggunaan perangkat lunak seperti Adobe Photoshop dan Illustrator, hingga konsep branding dan tipografi yang efektif."
         },
         {
           subtitle: "Mekanisme Belajar",
-          description: "Pembelajaran dilakukan secara daring, melalui video, materi bacaan, latihan praktik, serta forum diskusi. Evaluasi dilakukan setiap akhir modul."
+          description: "Pembelajaran dilakukan secara daring, melalui video, materi bacaan, latihan praktik, serta forum diskusi. Evaluasi dilakukan setiap akhir modul.",
+          detail: "Peserta akan belajar melalui kombinasi materi video, bacaan, dan tugas praktik yang dirancang untuk meningkatkan pemahaman dan keterampilan mereka dalam desain grafis profesional."
         },
         {
           subtitle: "Glosarium",
-          description: "Berisi kumpulan istilah penting dan teknis yang sering digunakan dalam bidang ini, membantu peserta memahami konteks pembelajaran secara lebih baik."
+          description: "Berisi kumpulan istilah penting dan teknis yang sering digunakan dalam bidang ini, membantu peserta memahami konteks pembelajaran secara lebih baik.",
+          detail: "Glosarium ini akan mencakup istilah-istilah penting dalam desain grafis, seperti 'tipografi', 'branding', dan 'ilustrasi digital'."
         },
         {
           subtitle: "Daftar Referensi",
-          description: "Referensi pembelajaran berasal dari buku-buku, jurnal, dan sumber daring terpercaya yang relevan dengan topik kursus."
+          description: "Referensi pembelajaran berasal dari buku-buku, jurnal, dan sumber daring terpercaya yang relevan dengan topik kursus.",
+          detail: "Daftar referensi ini akan mencakup buku teks, artikel jurnal, dan sumber online yang dapat membantu peserta memperdalam pengetahuan mereka tentang desain grafis profesional."
         },
         {
           subtitle: "Ikhtisar",
-          description: "Melalui kursus 8 minggu ini, peserta akan memperoleh keterampilan yang aplikatif dan siap diterapkan dalam dunia kerja profesional, khususnya di kawasan Bandung."
+          description: "Melalui kursus 8 minggu ini, peserta akan memperoleh keterampilan yang aplikatif dan siap diterapkan dalam dunia kerja profesional, khususnya di kawasan Bandung.",
+          detail: "Kursus ini dirancang untuk memberikan peserta keterampilan praktis yang dapat langsung diterapkan dalam desain grafis, termasuk penggunaan perangkat lunak desain, pengembangan konsep branding, dan penerapan tipografi yang efektif."
         }
       ]
     },
@@ -107,11 +112,31 @@ export const courses = [
       {
         title: "Detail Kelas",
         sections: [
-          { subtitle: "Pengantar", description: "Selamat datang di kursus Manajemen Media Sosial! Kursus ini dirancang untuk membekali peserta dengan pengetahuan dan keterampilan praktis sesuai kebutuhan industri di wilayah Bandung." },
-          { subtitle: "Mekanisme Belajar", description: "Pembelajaran dilakukan secara daring, melalui video, materi bacaan, latihan praktik, serta forum diskusi. Evaluasi dilakukan setiap akhir modul." },
-          { subtitle: "Glosarium", description: "Berisi kumpulan istilah penting dan teknis yang sering digunakan dalam bidang ini, membantu peserta memahami konteks pembelajaran secara lebih baik." },
-          { subtitle: "Daftar Referensi", description: "Referensi pembelajaran berasal dari buku-buku, jurnal, dan sumber daring terpercaya yang relevan dengan topik kursus." },
-          { subtitle: "Ikhtisar", description: "Melalui kursus 6 minggu ini, peserta akan memperoleh keterampilan yang aplikatif dan siap diterapkan dalam dunia kerja profesional, khususnya di kawasan Bandung." }
+          { 
+            subtitle: "Pengantar", 
+            description: "Selamat datang di kursus Manajemen Media Sosial! Kursus ini dirancang untuk membekali peserta dengan pengetahuan dan keterampilan praktis sesuai kebutuhan industri di wilayah Bandung.",
+            detail: "Kursus ini akan membahas berbagai aspek penting dalam manajemen media sosial, mulai dari perencanaan konten hingga analitik."
+          },
+          { 
+            subtitle: "Mekanisme Belajar", 
+            description: "Pembelajaran dilakukan secara daring, melalui video, materi bacaan, latihan praktik, serta forum diskusi. Evaluasi dilakukan setiap akhir modul.",
+            detail: "Peserta akan belajar melalui kombinasi materi video, bacaan, dan tugas praktik yang dirancang untuk meningkatkan pemahaman dan keterampilan mereka dalam manajemen media sosial."
+          },
+          { 
+            subtitle: "Glosarium", 
+            description: "Berisi kumpulan istilah penting dan teknis yang sering digunakan dalam bidang ini, membantu peserta memahami konteks pembelajaran secara lebih baik.",
+            detail: "Glosarium ini akan mencakup istilah-istilah penting dalam manajemen media sosial, seperti 'content planning', 'social media strategy', dan 'analytics'."
+          },
+          { 
+            subtitle: "Daftar Referensi", 
+            description: "Referensi pembelajaran berasal dari buku-buku, jurnal, dan sumber daring terpercaya yang relevan dengan topik kursus.",
+            detail: "Daftar referensi ini akan mencakup buku teks, artikel jurnal, dan sumber online yang dapat membantu peserta memperdalam pengetahuan mereka tentang manajemen media sosial."
+          },
+          { 
+            subtitle: "Ikhtisar", 
+            description: "Melalui kursus 6 minggu ini, peserta akan memperoleh keterampilan yang aplikatif dan siap diterapkan dalam dunia kerja profesional, khususnya di kawasan Bandung.",
+            detail: "Kursus ini dirancang untuk memberikan peserta keterampilan praktis yang dapat langsung diterapkan dalam manajemen media sosial, termasuk perencanaan konten, pengembangan strategi, analisis data, dan copywriting."
+          }
         ]
       },
       { title: "Materi Belajar", description: "Berikut materi yang akan dipelajari:" },
@@ -156,11 +181,31 @@ export const courses = [
     {
       title: "Detail Kelas",
       sections: [
-        { subtitle: "Pengantar", description: "Selamat datang di kursus Pertanian Modern! Kursus ini dirancang untuk membekali peserta dengan pengetahuan dan keterampilan praktis sesuai kebutuhan industri di wilayah Sukabumi & Cianjur." },
-        { subtitle: "Mekanisme Belajar", description: "Pembelajaran dilakukan secara daring, melalui video, materi bacaan, latihan praktik, serta forum diskusi. Evaluasi dilakukan setiap akhir modul." },
-        { subtitle: "Glosarium", description: "Berisi kumpulan istilah penting dan teknis yang sering digunakan dalam bidang ini, membantu peserta memahami konteks pembelajaran secara lebih baik." },
-        { subtitle: "Daftar Referensi", description: "Referensi pembelajaran berasal dari buku-buku, jurnal, dan sumber daring terpercaya yang relevan dengan topik kursus." },
-        { subtitle: "Ikhtisar", description: "Melalui kursus 10 minggu ini, peserta akan memperoleh keterampilan yang aplikatif dan siap diterapkan dalam dunia kerja profesional, khususnya di kawasan Sukabumi & Cianjur." }
+        { 
+          subtitle: "Pengantar", 
+          description: "Selamat datang di kursus Pertanian Modern! Kursus ini dirancang untuk membekali peserta dengan pengetahuan dan keterampilan praktis sesuai kebutuhan industri di wilayah Sukabumi & Cianjur.",
+          detail: "Kursus ini akan membahas berbagai aspek penting dalam pertanian modern, mulai dari hidroponik hingga pengendalian hama."
+        },
+        { 
+          subtitle: "Mekanisme Belajar", 
+          description: "Pembelajaran dilakukan secara daring, melalui video, materi bacaan, latihan praktik, serta forum diskusi. Evaluasi dilakukan setiap akhir modul.",
+          detail: "Peserta akan belajar melalui kombinasi materi video, bacaan, dan tugas praktik yang dirancang untuk meningkatkan pemahaman dan keterampilan mereka dalam pertanian modern."
+        },
+        { 
+          subtitle: "Glosarium", 
+          description: "Berisi kumpulan istilah penting dan teknis yang sering digunakan dalam bidang ini, membantu peserta memahami konteks pembelajaran secara lebih baik.",
+          detail: "Glosarium ini akan mencakup istilah-istilah penting dalam pertanian modern, seperti 'hidroponik', 'pertanian organik', dan 'rotasi tanaman'."
+        },
+        { 
+          subtitle: "Daftar Referensi", 
+          description: "Referensi pembelajaran berasal dari buku-buku, jurnal, dan sumber daring terpercaya yang relevan dengan topik kursus.",
+          detail: "Daftar referensi ini akan mencakup buku teks, artikel jurnal, dan sumber online yang dapat membantu peserta memperdalam pengetahuan mereka tentang pertanian modern."
+        },
+        { 
+          subtitle: "Ikhtisar", 
+          description: "Melalui kursus 10 minggu ini, peserta akan memperoleh keterampilan yang aplikatif dan siap diterapkan dalam dunia kerja profesional, khususnya di kawasan Sukabumi & Cianjur.",
+          detail: "Kursus ini dirancang untuk memberikan peserta keterampilan praktis yang dapat langsung diterapkan dalam pertanian modern, termasuk teknik hidroponik, pertanian organik, pengendalian hama, dan rotasi tanaman."
+        }
       ]
     },
     { title: "Materi Belajar", description: "Berikut materi yang akan dipelajari:" },
@@ -205,11 +250,31 @@ export const courses = [
     {
       title: "Detail Kelas",
       sections: [
-        { subtitle: "Pengantar", description: "Selamat datang di kursus Digitalisasi Tani! Kursus ini dirancang untuk membekali peserta dengan pengetahuan dan keterampilan praktis sesuai kebutuhan industri di wilayah Sukabumi & Cianjur." },
-        { subtitle: "Mekanisme Belajar", description: "Pembelajaran dilakukan secara daring, melalui video, materi bacaan, latihan praktik, serta forum diskusi. Evaluasi dilakukan setiap akhir modul." },
-        { subtitle: "Glosarium", description: "Berisi kumpulan istilah penting dan teknis yang sering digunakan dalam bidang ini, membantu peserta memahami konteks pembelajaran secara lebih baik." },
-        { subtitle: "Daftar Referensi", description: "Referensi pembelajaran berasal dari buku-buku, jurnal, dan sumber daring terpercaya yang relevan dengan topik kursus." },
-        { subtitle: "Ikhtisar", description: "Melalui kursus 8 minggu ini, peserta akan memperoleh keterampilan yang aplikatif dan siap diterapkan dalam dunia kerja profesional, khususnya di kawasan Sukabumi & Cianjur." }
+        { 
+          subtitle: "Pengantar", 
+          description: "Selamat datang di kursus Digitalisasi Tani! Kursus ini dirancang untuk membekali peserta dengan pengetahuan dan keterampilan praktis sesuai kebutuhan industri di wilayah Sukabumi & Cianjur.",
+          detail: "Kursus ini akan membahas berbagai aspek penting dalam digitalisasi pertanian, mulai dari perangkat lunak manajemen pertanian hingga penerapan IoT dan analisis data."
+        },
+        { 
+          subtitle: "Mekanisme Belajar", 
+          description: "Pembelajaran dilakukan secara daring, melalui video, materi bacaan, latihan praktik, serta forum diskusi. Evaluasi dilakukan setiap akhir modul.",
+          detail: "Peserta akan belajar melalui kombinasi materi video, bacaan, dan tugas praktik yang dirancang untuk meningkatkan pemahaman dan keterampilan mereka dalam digitalisasi pertanian."
+        },
+        { 
+          subtitle: "Glosarium", 
+          description: "Berisi kumpulan istilah penting dan teknis yang sering digunakan dalam bidang ini, membantu peserta memahami konteks pembelajaran secara lebih baik.",
+          detail: "Glosarium ini akan mencakup istilah-istilah penting dalam digitalisasi pertanian, seperti 'IoT', 'data analytics', dan 'farm management software'."
+        },
+        { 
+          subtitle: "Daftar Referensi", 
+          description: "Referensi pembelajaran berasal dari buku-buku, jurnal, dan sumber daring terpercaya yang relevan dengan topik kursus.",
+          detail: "Daftar referensi ini akan mencakup buku teks, artikel jurnal, dan sumber online yang dapat membantu peserta memperdalam pengetahuan mereka tentang digitalisasi pertanian."
+        },
+        { 
+          subtitle: "Ikhtisar", 
+          description: "Melalui kursus 8 minggu ini, peserta akan memperoleh keterampilan yang aplikatif dan siap diterapkan dalam dunia kerja profesional, khususnya di kawasan Sukabumi & Cianjur.",
+          detail: "Kursus ini dirancang untuk memberikan peserta keterampilan praktis yang dapat langsung diterapkan dalam digitalisasi pertanian, termasuk penggunaan perangkat lunak manajemen, penerapan IoT, analisis data, dan strategi pemasaran digital."
+        }
       ]
     },
     { title: "Materi Belajar", description: "Berikut materi yang akan dipelajari:" },
@@ -254,11 +319,31 @@ export const courses = [
     {
       title: "Detail Kelas",
       sections: [
-        { subtitle: "Pengantar", description: "Selamat datang di kursus IT Support Specialist! Kursus ini dirancang untuk membekali peserta dengan pengetahuan dan keterampilan praktis sesuai kebutuhan industri di wilayah Bogor & Depok." },
-        { subtitle: "Mekanisme Belajar", description: "Pembelajaran dilakukan secara daring, melalui video, materi bacaan, latihan praktik, serta forum diskusi. Evaluasi dilakukan setiap akhir modul." },
-        { subtitle: "Glosarium", description: "Berisi kumpulan istilah penting dan teknis yang sering digunakan dalam bidang ini, membantu peserta memahami konteks pembelajaran secara lebih baik." },
-        { subtitle: "Daftar Referensi", description: "Referensi pembelajaran berasal dari buku-buku, jurnal, dan sumber daring terpercaya yang relevan dengan topik kursus." },
-        { subtitle: "Ikhtisar", description: "Melalui kursus 8 minggu ini, peserta akan memperoleh keterampilan yang aplikatif dan siap diterapkan dalam dunia kerja profesional, khususnya di kawasan Bogor & Depok." }
+        { 
+          subtitle: "Pengantar", 
+          description: "Selamat datang di kursus IT Support Specialist! Kursus ini dirancang untuk membekali peserta dengan pengetahuan dan keterampilan praktis sesuai kebutuhan industri di wilayah Bogor & Depok.", 
+          detail: "Kursus ini akan membahas berbagai aspek penting dalam dukungan teknis komputer dan jaringan, mulai dari pemecahan masalah perangkat keras hingga layanan pelanggan."
+         },
+        { 
+          subtitle: "Mekanisme Belajar", 
+          description: "Pembelajaran dilakukan secara daring, melalui video, materi bacaan, latihan praktik, serta forum diskusi. Evaluasi dilakukan setiap akhir modul.",
+          detail: "Peserta akan belajar melalui kombinasi materi video, bacaan, dan tugas praktik yang dirancang untuk meningkatkan pemahaman dan keterampilan mereka dalam dukungan teknis."
+        },
+        { 
+          subtitle: "Glosarium", 
+          description: "Berisi kumpulan istilah penting dan teknis yang sering digunakan dalam bidang ini, membantu peserta memahami konteks pembelajaran secara lebih baik.",
+          detail: "Glosarium ini akan mencakup istilah-istilah penting dalam dukungan teknis, seperti 'troubleshooting', 'network configuration', dan 'customer service'."
+        },
+        { 
+          subtitle: "Daftar Referensi", 
+          description: "Referensi pembelajaran berasal dari buku-buku, jurnal, dan sumber daring terpercaya yang relevan dengan topik kursus.",
+          detail: "Daftar referensi ini akan mencakup buku teks, artikel jurnal, dan sumber online yang dapat membantu peserta memperdalam pengetahuan mereka tentang dukungan teknis."
+        },
+        { 
+          subtitle: "Ikhtisar", 
+          description: "Melalui kursus 8 minggu ini, peserta akan memperoleh keterampilan yang aplikatif dan siap diterapkan dalam dunia kerja profesional, khususnya di kawasan Bogor & Depok.",
+          detail: "Kursus ini dirancang untuk memberikan peserta keterampilan praktis yang dapat langsung diterapkan dalam dukungan teknis, termasuk pemecahan masalah perangkat keras, pengaturan jaringan, instalasi perangkat lunak, dan layanan pelanggan."
+        }
       ]
     },
     { title: "Materi Belajar", description: "Berikut materi yang akan dipelajari:" },
@@ -303,11 +388,31 @@ export const courses = [
     {
       title: "Detail Kelas",
       sections: [
-        { subtitle: "Pengantar", description: "Selamat datang di kursus Customer Service Excellence! Kursus ini dirancang untuk membekali peserta dengan pengetahuan dan keterampilan praktis sesuai kebutuhan industri di wilayah Bogor & Depok." },
-        { subtitle: "Mekanisme Belajar", description: "Pembelajaran dilakukan secara daring, melalui video, materi bacaan, latihan praktik, serta forum diskusi. Evaluasi dilakukan setiap akhir modul." },
-        { subtitle: "Glosarium", description: "Berisi kumpulan istilah penting dan teknis yang sering digunakan dalam bidang ini, membantu peserta memahami konteks pembelajaran secara lebih baik." },
-        { subtitle: "Daftar Referensi", description: "Referensi pembelajaran berasal dari buku-buku, jurnal, dan sumber daring terpercaya yang relevan dengan topik kursus." },
-        { subtitle: "Ikhtisar", description: "Melalui kursus 4 minggu ini, peserta akan memperoleh keterampilan yang aplikatif dan siap diterapkan dalam dunia kerja profesional, khususnya di kawasan Bogor & Depok." }
+        { 
+          subtitle: "Pengantar", 
+          description: "Selamat datang di kursus Customer Service Excellence! Kursus ini dirancang untuk membekali peserta dengan pengetahuan dan keterampilan praktis sesuai kebutuhan industri di wilayah Bogor & Depok.",
+          detail: "Kursus ini akan membahas berbagai aspek penting dalam pelayanan pelanggan, mulai dari keterampilan komunikasi hingga penyelesaian konflik."
+        },
+        { 
+          subtitle: "Mekanisme Belajar", 
+          description: "Pembelajaran dilakukan secara daring, melalui video, materi bacaan, latihan praktik, serta forum diskusi. Evaluasi dilakukan setiap akhir modul.",
+          detail: "Peserta akan belajar melalui kombinasi materi video, bacaan, dan tugas praktik yang dirancang untuk meningkatkan pemahaman dan keterampilan mereka dalam pelayanan pelanggan."
+        },
+        { 
+          subtitle: "Glosarium", 
+          description: "Berisi kumpulan istilah penting dan teknis yang sering digunakan dalam bidang ini, membantu peserta memahami konteks pembelajaran secara lebih baik.",
+          detail: "Glosarium ini akan mencakup istilah-istilah penting dalam pelayanan pelanggan, seperti 'komunikasi efektif', 'pemecahan masalah', dan 'penyelesaian konflik'."
+        },
+        { 
+          subtitle: "Daftar Referensi", 
+          description: "Referensi pembelajaran berasal dari buku-buku, jurnal, dan sumber daring terpercaya yang relevan dengan topik kursus.",
+          detail: "Daftar referensi ini akan mencakup buku teks, artikel jurnal, dan sumber online yang dapat membantu peserta memperdalam pengetahuan mereka tentang pelayanan pelanggan."
+        },
+        { 
+          subtitle: "Ikhtisar", 
+          description: "Melalui kursus 4 minggu ini, peserta akan memperoleh keterampilan yang aplikatif dan siap diterapkan dalam dunia kerja profesional, khususnya di kawasan Bogor & Depok.",
+          detail: "Kursus ini dirancang untuk memberikan peserta keterampilan praktis yang dapat langsung diterapkan dalam pelayanan pelanggan, termasuk keterampilan komunikasi, pemecahan masalah, penggunaan sistem CRM, dan penyelesaian konflik."
+        }
       ]
     },
     { title: "Materi Belajar", description: "Berikut materi yang akan dipelajari:" },
@@ -352,11 +457,31 @@ export const courses = [
     {
       title: "Detail Kelas",
       sections: [
-        { subtitle: "Pengantar", description: "Selamat datang di kursus Kerajinan Kulit! Kursus ini dirancang untuk membekali peserta dengan pengetahuan dan keterampilan praktis sesuai kebutuhan industri di wilayah Garut & Tasikmalaya." },
-        { subtitle: "Mekanisme Belajar", description: "Pembelajaran dilakukan secara daring, melalui video, materi bacaan, latihan praktik, serta forum diskusi. Evaluasi dilakukan setiap akhir modul." },
-        { subtitle: "Glosarium", description: "Berisi kumpulan istilah penting dan teknis yang sering digunakan dalam bidang ini, membantu peserta memahami konteks pembelajaran secara lebih baik." },
-        { subtitle: "Daftar Referensi", description: "Referensi pembelajaran berasal dari buku-buku, jurnal, dan sumber daring terpercaya yang relevan dengan topik kursus." },
-        { subtitle: "Ikhtisar", description: "Melalui kursus 10 minggu ini, peserta akan memperoleh keterampilan yang aplikatif dan siap diterapkan dalam dunia kerja profesional, khususnya di kawasan Garut & Tasikmalaya." }
+        { 
+          subtitle: "Pengantar", 
+          description: "Selamat datang di kursus Kerajinan Kulit! Kursus ini dirancang untuk membekali peserta dengan pengetahuan dan keterampilan praktis sesuai kebutuhan industri di wilayah Garut & Tasikmalaya.",
+          detail: "Kursus ini akan membahas berbagai aspek penting dalam pembuatan produk kerajinan kulit, mulai dari teknik dasar hingga kontrol kualitas."
+        },
+        { 
+          subtitle: "Mekanisme Belajar", 
+          description: "Pembelajaran dilakukan secara daring, melalui video, materi bacaan, latihan praktik, serta forum diskusi. Evaluasi dilakukan setiap akhir modul.",
+          detail: "Peserta akan belajar melalui kombinasi materi video, bacaan, dan tugas praktik yang dirancang untuk meningkatkan pemahaman dan keterampilan mereka dalam kerajinan kulit."
+        },
+        { 
+          subtitle: "Glosarium", 
+          description: "Berisi kumpulan istilah penting dan teknis yang sering digunakan dalam bidang ini, membantu peserta memahami konteks pembelajaran secara lebih baik.",
+          detail: "Glosarium ini akan mencakup istilah-istilah penting dalam kerajinan kulit, seperti 'pola', 'penyelesaian', dan 'kontrol kualitas'."
+        },
+        { 
+          subtitle: "Daftar Referensi", 
+          description: "Referensi pembelajaran berasal dari buku-buku, jurnal, dan sumber daring terpercaya yang relevan dengan topik kursus.",
+          detail: "Daftar referensi ini akan mencakup buku teks, artikel jurnal, dan sumber online yang dapat membantu peserta memperdalam pengetahuan mereka tentang kerajinan kulit."
+        },
+        { 
+          subtitle: "Ikhtisar", 
+          description: "Melalui kursus 10 minggu ini, peserta akan memperoleh keterampilan yang aplikatif dan siap diterapkan dalam dunia kerja profesional, khususnya di kawasan Garut & Tasikmalaya.",
+          detail: "Kursus ini dirancang untuk memberikan peserta keterampilan praktis yang dapat langsung diterapkan dalam pembuatan produk kerajinan kulit, termasuk teknik pembuatan, desain pola, penyelesaian, dan kontrol kualitas."
+         }
       ]
     },
     { title: "Materi Belajar", description: "Berikut materi yang akan dipelajari:" },
@@ -401,11 +526,31 @@ export const courses = [
     {
       title: "Detail Kelas",
       sections: [
-        { subtitle: "Pengantar", description: "Selamat datang di kursus Kerajinan Bambu! Kursus ini dirancang untuk membekali peserta dengan pengetahuan dan keterampilan praktis sesuai kebutuhan industri di wilayah Garut & Tasikmalaya." },
-        { subtitle: "Mekanisme Belajar", description: "Pembelajaran dilakukan secara daring, melalui video, materi bacaan, latihan praktik, serta forum diskusi. Evaluasi dilakukan setiap akhir modul." },
-        { subtitle: "Glosarium", description: "Berisi kumpulan istilah penting dan teknis yang sering digunakan dalam bidang ini, membantu peserta memahami konteks pembelajaran secara lebih baik." },
-        { subtitle: "Daftar Referensi", description: "Referensi pembelajaran berasal dari buku-buku, jurnal, dan sumber daring terpercaya yang relevan dengan topik kursus." },
-        { subtitle: "Ikhtisar", description: "Melalui kursus 8 minggu ini, peserta akan memperoleh keterampilan yang aplikatif dan siap diterapkan dalam dunia kerja profesional, khususnya di kawasan Garut & Tasikmalaya." }
+        { 
+          subtitle: "Pengantar", 
+          description: "Selamat datang di kursus Kerajinan Bambu! Kursus ini dirancang untuk membekali peserta dengan pengetahuan dan keterampilan praktis sesuai kebutuhan industri di wilayah Garut & Tasikmalaya.",
+          detail: "Kursus ini akan membahas berbagai aspek penting dalam pembuatan produk kerajinan bambu, mulai dari pengolahan bahan hingga inovasi desain."
+        },
+        { 
+          subtitle: "Mekanisme Belajar", 
+          description: "Pembelajaran dilakukan secara daring, melalui video, materi bacaan, latihan praktik, serta forum diskusi. Evaluasi dilakukan setiap akhir modul.",
+          detail: "Peserta akan belajar melalui kombinasi materi video, bacaan, dan tugas praktik yang dirancang untuk meningkatkan pemahaman dan keterampilan mereka dalam kerajinan bambu."
+        },
+        { 
+          subtitle: "Glosarium", 
+          description: "Berisi kumpulan istilah penting dan teknis yang sering digunakan dalam bidang ini, membantu peserta memahami konteks pembelajaran secara lebih baik.",
+          detail: "Glosarium ini akan mencakup istilah-istilah penting dalam kerajinan bambu, seperti 'anyaman', 'pengolahan', dan 'inovasi desain'."
+        },
+        { 
+          subtitle: "Daftar Referensi", 
+          description: "Referensi pembelajaran berasal dari buku-buku, jurnal, dan sumber daring terpercaya yang relevan dengan topik kursus.",
+          detail: "Daftar referensi ini akan mencakup buku teks, artikel jurnal, dan sumber online yang dapat membantu peserta memperdalam pengetahuan mereka tentang kerajinan bambu."
+        },
+        { 
+          subtitle: "Ikhtisar", 
+          description: "Melalui kursus 8 minggu ini, peserta akan memperoleh keterampilan yang aplikatif dan siap diterapkan dalam dunia kerja profesional, khususnya di kawasan Garut & Tasikmalaya.",
+          detail: "Kursus ini dirancang untuk memberikan peserta keterampilan praktis yang dapat langsung diterapkan dalam pembuatan produk kerajinan bambu, termasuk teknik pengolahan, anyaman, inovasi desain, dan pengembangan produk."
+        }
       ]
     },
     { title: "Materi Belajar", description: "Berikut materi yang akan dipelajari:" },
@@ -450,11 +595,31 @@ export const courses = [
     {
       title: "Detail Kelas",
       sections: [
-        { subtitle: "Pengantar", description: "Selamat datang di kursus Tour Guide Professional! Kursus ini dirancang untuk membekali peserta dengan pengetahuan dan keterampilan praktis sesuai kebutuhan industri di wilayah Pangandaran." },
-        { subtitle: "Mekanisme Belajar", description: "Pembelajaran dilakukan secara daring, melalui video, materi bacaan, latihan praktik, serta forum diskusi. Evaluasi dilakukan setiap akhir modul." },
-        { subtitle: "Glosarium", description: "Berisi kumpulan istilah penting dan teknis yang sering digunakan dalam bidang ini, membantu peserta memahami konteks pembelajaran secara lebih baik." },
-        { subtitle: "Daftar Referensi", description: "Referensi pembelajaran berasal dari buku-buku, jurnal, dan sumber daring terpercaya yang relevan dengan topik kursus." },
-        { subtitle: "Ikhtisar", description: "Melalui kursus 8 minggu ini, peserta akan memperoleh keterampilan yang aplikatif dan siap diterapkan dalam dunia kerja profesional, khususnya di kawasan Pangandaran." }
+        { 
+          subtitle: "Pengantar", 
+          description: "Selamat datang di kursus Tour Guide Professional! Kursus ini dirancang untuk membekali peserta dengan pengetahuan dan keterampilan praktis sesuai kebutuhan industri di wilayah Pangandaran.",
+          detail: "Kursus ini akan membahas berbagai aspek penting dalam menjadi pemandu wisata profesional, termasuk sejarah lokal, keterampilan komunikasi, pertolongan pertama, dan keterampilan bahasa."  
+        },
+        { 
+          subtitle: "Mekanisme Belajar", 
+          description: "Pembelajaran dilakukan secara daring, melalui video, materi bacaan, latihan praktik, serta forum diskusi. Evaluasi dilakukan setiap akhir modul.",
+          detail: "Peserta akan belajar melalui kombinasi materi video, bacaan, dan tugas praktik yang dirancang untuk meningkatkan pemahaman dan keterampilan mereka dalam memandu wisata."
+        },
+        { 
+          subtitle: "Glosarium", 
+          description: "Berisi kumpulan istilah penting dan teknis yang sering digunakan dalam bidang ini, membantu peserta memahami konteks pembelajaran secara lebih baik.",
+          detail: "Glosarium ini akan mencakup istilah-istilah penting dalam pemanduan wisata, seperti 'itinerary', 'heritage', dan 'cultural significance'."
+        },
+        { 
+          subtitle: "Daftar Referensi", 
+          description: "Referensi pembelajaran berasal dari buku-buku, jurnal, dan sumber daring terpercaya yang relevan dengan topik kursus.",
+          detail: "Daftar referensi ini akan mencakup buku teks, artikel jurnal, dan sumber online yang dapat membantu peserta memperdalam pengetahuan mereka tentang pemanduan wisata."
+        },
+        { 
+          subtitle: "Ikhtisar", 
+          description: "Melalui kursus 8 minggu ini, peserta akan memperoleh keterampilan yang aplikatif dan siap diterapkan dalam dunia kerja profesional, khususnya di kawasan Pangandaran.",
+          detail: "Kursus ini dirancang untuk memberikan peserta keterampilan praktis yang dapat langsung diterapkan dalam pemanduan wisata, termasuk pengetahuan sejarah lokal, keterampilan komunikasi, dan kemampuan bahasa asing."
+        }
       ]
     },
     { title: "Materi Belajar", description: "Berikut materi yang akan dipelajari:" },
@@ -499,11 +664,31 @@ export const courses = [
     {
       title: "Detail Kelas",
       sections: [
-        { subtitle: "Pengantar", description: "Selamat datang di kursus Manajemen Homestay! Kursus ini dirancang untuk membekali peserta dengan pengetahuan dan keterampilan praktis sesuai kebutuhan industri di wilayah Pangandaran." },
-        { subtitle: "Mekanisme Belajar", description: "Pembelajaran dilakukan secara daring, melalui video, materi bacaan, latihan praktik, serta forum diskusi. Evaluasi dilakukan setiap akhir modul." },
-        { subtitle: "Glosarium", description: "Berisi kumpulan istilah penting dan teknis yang sering digunakan dalam bidang ini, membantu peserta memahami konteks pembelajaran secara lebih baik." },
-        { subtitle: "Daftar Referensi", description: "Referensi pembelajaran berasal dari buku-buku, jurnal, dan sumber daring terpercaya yang relevan dengan topik kursus." },
-        { subtitle: "Ikhtisar", description: "Melalui kursus 6 minggu ini, peserta akan memperoleh keterampilan yang aplikatif dan siap diterapkan dalam dunia kerja profesional, khususnya di kawasan Pangandaran." }
+        { 
+          subtitle: "Pengantar", 
+          description: "Selamat datang di kursus Manajemen Homestay! Kursus ini dirancang untuk membekali peserta dengan pengetahuan dan keterampilan praktis sesuai kebutuhan industri di wilayah Pangandaran.",
+          detail : "Kursus ini akan membahas berbagai aspek manajemen homestay, mulai dari layanan tamu hingga pengelolaan operasional harian."
+         },
+        { 
+          subtitle: "Mekanisme Belajar", 
+          description: "Pembelajaran dilakukan secara daring, melalui video, materi bacaan, latihan praktik, serta forum diskusi. Evaluasi dilakukan setiap akhir modul.", 
+          detail : "Peserta akan belajar melalui kombinasi materi video, bacaan, dan tugas praktik yang dirancang untuk meningkatkan pemahaman dan keterampilan mereka dalam manajemen homestay."
+        },
+        { 
+          subtitle: "Glosarium", 
+          description: "Berisi kumpulan istilah penting dan teknis yang sering digunakan dalam bidang ini, membantu peserta memahami konteks pembelajaran secara lebih baik.", 
+          detail : "Glosarium ini akan mencakup istilah-istilah penting dalam manajemen homestay, seperti 'check-in', 'housekeeping', dan 'reservasi'." 
+        },
+        { 
+          subtitle: "Daftar Referensi", 
+          description: "Referensi pembelajaran berasal dari buku-buku, jurnal, dan sumber daring terpercaya yang relevan dengan topik kursus.", 
+          detail : "Daftar referensi ini akan mencakup buku teks, artikel jurnal, dan sumber online yang dapat membantu peserta memperdalam pengetahuan mereka tentang manajemen homestay."
+        },
+        { 
+          subtitle: "Ikhtisar", 
+          description: "Melalui kursus 6 minggu ini, peserta akan memperoleh keterampilan yang aplikatif dan siap diterapkan dalam dunia kerja profesional, khususnya di kawasan Pangandaran.", 
+          detail : "Kursus ini dirancang untuk memberikan peserta keterampilan praktis yang dapat langsung diterapkan dalam pengelolaan homestay, termasuk manajemen tamu, operasional harian, dan layanan pelanggan."
+        }
       ]
     },
     { title: "Materi Belajar", description: "Berikut materi yang akan dipelajari:" },
