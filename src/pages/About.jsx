@@ -2,6 +2,10 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { BookOpen, MapPin } from "lucide-react";
 
+// Fungsi konversi judul jadi slug
+const toSlug = (str) =>
+  str.toLowerCase().replace(/[\s&]+/g, "-");
+
 const locations = [
   {
     id: "bandung",
@@ -75,16 +79,19 @@ export default function About() {
                   <span className="font-semibold text-blue-700">Pelatihan:</span>{" "}
                   {loc.pelatihan}
                 </p>
-                <Link to="/login">
-                <motion.button
+
+                {/* ⬇️ Link diarahkan ke wilayah sesuai region */}
+                <Link to={`/wilayah/${toSlug(loc.title)}`}>
+                  <motion.button
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
                     className="flex items-center gap-2 bg-blue-600 text-white px-4 py-2 rounded-xl shadow hover:bg-blue-700 transition"
-                >
+                  >
                     <BookOpen size={18} />
                     Ikuti Pelatihan
-                </motion.button>
+                  </motion.button>
                 </Link>
+
               </div>
             </div>
           </motion.div>
@@ -93,3 +100,4 @@ export default function About() {
     </div>
   );
 }
+  

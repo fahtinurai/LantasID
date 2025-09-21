@@ -1,100 +1,87 @@
+import { useState } from "react";
+import { useNavigate, Link } from "react-router-dom";
 import AuthLayout from "../layouts/AuthLayout";
-import { Link } from "react-router-dom";
-import { FaEnvelope, FaLock } from "react-icons/fa";
+import { loginDummy } from "../services/authDummy";
 
 const Login = () => {
+  const navigate = useNavigate();
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [error, setError] = useState("");
+  const [showPassword, setShowPassword] = useState(false);
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const user = loginDummy(email, password);
+    if (user) {
+      // simpan ke localStorage
+      localStorage.setItem("user", JSON.stringify(user));
+      // kirim event supaya Navbar tahu
+      window.dispatchEvent(new Event("storage"));
+      // pindah ke beranda
+      navigate("/");
+    } else {
+      setError("Email atau password salah");
+    }
+  };
+
   return (
     <AuthLayout>
       <div>
-        <h2 className="text-2xl font-bold text-gray-800 text-center mb-2">Welcome Back</h2>
-        <p className="text-sm text-center text-gray-500 mb-6">Masuk untuk melanjutkan perjalanan karirmu di LantasID.</p>
+        <h2 className="text-2xl font-bold text-gray-800 text-center mb-2">
+          Welcome Back
+        </h2>
+        <p className="text-sm text-center text-gray-500 mb-6">
+          Masuk untuk melanjutkan perjalanan karirmu di LantasID.
+        </p>
 
-        <div className="flex justify-center mb-4">
-          <button className="flex items-center gap-3 border border-teal bg-white text-black px-6 py-2 rounded-lg transition hover:bg-gray-100">
-            Sign In
+        {error && <p className="text-center text-red-500 mb-2">{error}</p>}
+
+        <form className="space-y-5" onSubmit={handleSubmit}>
+          <div className="relative">
+            <input
+              type="email"
+              placeholder="Email"
+              className="w-full px-4 py-3 rounded-md bg-white/70 border border-gray-300 
+                      text-gray-600 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-blue-400 transition"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              required
+            />
+          </div>
+
+          <div className="relative mt-4">
+            <input
+              type={showPassword ? "text" : "password"}
+              placeholder="Password"
+              className="w-full px-4 py-3 rounded-md bg-white/70 border border-gray-300 
+                      text-gray-600 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-blue-400 transition"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+              required
+            />
+            <button
+              type="button"
+              onClick={() => setShowPassword(!showPassword)}
+              className="absolute inset-y-0 right-3 flex items-center text-gray-500 hover:text-gray-700"
+            >
+              {showPassword ? "🙈" : "👁️"}
+            </button>
+          </div>
+
+          <button
+            type="submit"
+            className="w-full bg-blue-600 font-bold text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition duration-200"
+          >
+            Login
           </button>
-          <Link
-            to="/register"
-            className="px-4 py-2 font-semibold text-gray-500 hover:text-teal-600"
-          >
-            Signup
-          </Link>
-        </div>
-
-      <form className="space-y-5">
-        {/* Email Field */}
-        <div className="relative">
-          <input
-            type="email"
-            placeholder="Email"
-            className="w-full px-4 py-3 rounded-md 
-                      bg-white/70 border border-gray-300 
-                      text-gray-600 placeholder-gray-400 
-                      focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-blue-400 transition"
-            required
-          />
-        </div>
-
-        {/* Password Field */}
-        <div className="relative mt-4">
-          <input
-            type="password"
-            placeholder="Password"
-            className="w-full px-4 py-3 rounded-md 
-                      bg-white/70 border border-gray-300 
-                      text-gray-600 placeholder-gray-400 
-                      focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-blue-400 transition"
-            required
-          />
-        </div>
-
-        {/* Lupa Password */}
-        <div className="flex justify-end mt-2">
-          <Link 
-            to="/forgot-password" 
-            className="text-sm text-blue-600 hover:underline"
-          >
-            Lupa Password?
-          </Link>
-        </div>
-
-        {/* Submit Button */}
-        <button
-          type="submit"
-          className="w-full bg-blue-600 font-bold text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition duration-200"
-        >
-          Login
-        </button>
         </form>
 
-      {/* Link Register */}
-          <p className="text-xs text-center text-gray-500 mt-6">
-            Belum punya akun?{" "}
-            <Link to="/register" className="text-blue-600 font-medium hover:underline">
-              Masuk di sini
-            </Link>
-          </p>
-          
-        <div className="flex items-center my-4">
-          <hr className="flex-grow border-gray-300" />
-          <span className="mx-2 text-gray-500 text-sm">Or Continue With</span>
-          <hr className="flex-grow border-gray-300" />
-        </div>
-
-        <div className="flex justify-center gap-4">
-          <button className="bg-gray-100 p-2 rounded-full hover:shadow">
-            <img src="public/images/google.png" alt="Google" className="w-5 h-5" />
-          </button>
-          <button className="bg-gray-100 p-2 rounded-full hover:shadow">
-            <img src="public/images/apple.png" alt="Apple" className="w-5 h-5" />
-          </button>
-          <button className="bg-gray-100 p-2 rounded-full hover:shadow">
-            <img src="public/images/facebook.png" alt="Facebook" className="w-5 h-5" />
-          </button>
-        </div>
-
-        <p className="text-xs text-center text-gray-400 mt-6">
-          Join the millions of smart investors who trust us to manage their finances.
+        <p className="text-xs text-center text-gray-500 mt-6">
+          Belum punya akun?{" "}
+          <Link to="/register" className="text-blue-600 font-medium hover:underline">
+            Daftar di sini
+          </Link>
         </p>
       </div>
     </AuthLayout>

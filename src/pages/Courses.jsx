@@ -1,7 +1,18 @@
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { courses } from "../data/courses";
 
 const Courses = () => {
+  const navigate = useNavigate();
+  const user = localStorage.getItem("user"); // cek apakah user login
+
+  const handleStart = (courseId) => {
+    if (!user) {
+      navigate("/login");
+    } else {
+      navigate(`/courses/${courseId}/content`);
+    }
+  };
+
   return (
     <div className="bg-white py-16 px-4 lg:px-16">
       <div className="max-w-7xl mx-auto">
@@ -14,7 +25,6 @@ const Courses = () => {
               key={course.id}
               className="relative group bg-white rounded-2xl shadow-md overflow-hidden transition duration-300 transform hover:-translate-y-1"
             >
-              {/* Hover Blur Layer */}
               <div className="absolute inset-0 bg-white/30 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition duration-300 z-0 rounded-2xl" />
 
               <div className="relative z-10">
@@ -23,35 +33,43 @@ const Courses = () => {
                 </div>
                 <div className="p-5">
                   <p className="text-sm mb-4 text-gray-700">{course.description}</p>
-                  <h4 className="font-semibold text-blue-500 mb-2">Yang akan dipelajari:</h4>
+                  <h4 className="font-semibold text-blue-500 mb-2">
+                    Yang akan dipelajari:
+                  </h4>
                   <ul className="space-y-2">
-                  {course.topics.map((topic, i) => (
-                    <li key={i} className="flex items-center gap-2">
-                      <img src={topic.image} alt={topic.name} className="w-6 h-6 object-cover rounded" />
-                      <span>{topic.name}</span>
-                    </li>
-                  ))}
-                </ul>
+                    {course.topics.map((topic, i) => (
+                      <li key={i} className="flex items-center gap-2">
+                        <img
+                          src={topic.image}
+                          alt={topic.name}
+                          className="w-6 h-6 object-cover rounded"
+                        />
+                        <span>{topic.name}</span>
+                      </li>
+                    ))}
+                  </ul>
                   <div className="flex justify-between text-sm text-gray-600 mb-4">
                     <div>🕒 {course.duration}</div>
                     <div>📊 {course.level}</div>
                   </div>
 
-                 <div className="flex gap-3">
-                {/* Mulai Belajar */}
-                <Link to="/login" className="flex-1">
-                  <button className="w-full bg-blue-500 text-white font-semibold py-2 rounded hover:bg-blue-600 transition duration-200 flex items-center justify-center">
-                    Mulai Belajar
-                  </button>
-                </Link>
+                  <div className="flex gap-3">
+                    {/* Mulai Belajar */}
+                    <button
+                      onClick={() => handleStart(course.id)}
+                      className="flex-1 bg-blue-500 text-white font-semibold py-2 rounded hover:bg-blue-600 transition duration-200 flex items-center justify-center"
+                    >
+                      Mulai Belajar
+                    </button>
 
-                {/* Lihat Detail */}
-                <Link to={`/courses/${course.id}`} className="flex-1">
-                  <button className="w-full border border-blue-500 text-blue-600 font-semibold py-2 rounded bg-transparent hover:bg-blue-50 transition duration-200 flex items-center justify-center">
-                    Lihat Detail
-                  </button>
-                </Link>
-                </div>
+                    {/* Lihat Detail */}
+                    <button
+                      onClick={() => navigate(`/courses/${course.id}`)}
+                      className="flex-1 border border-blue-500 text-blue-600 font-semibold py-2 rounded bg-transparent hover:bg-blue-50 transition duration-200 flex items-center justify-center"
+                    >
+                      Lihat Detail
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
