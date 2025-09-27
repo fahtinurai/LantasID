@@ -78,7 +78,7 @@ const Dashboard = () => {
               <div className="flex justify-between items-center mt-2">
                 <span className="text-xs text-green-600 font-medium">100%</span>
                 <button
-                  onClick={() => navigate("/sertifikat")}
+                  onClick={() => navigate("/sertifikat/1")}
                   className="px-3 py-1 border border-blue-500 text-blue-500 text-xs rounded bg-white hover:bg-blue-50 focus:outline-none focus:ring-1 focus:ring-blue-500"
                 >
                   Lihat Sertifikat
@@ -140,7 +140,7 @@ const Dashboard = () => {
 
             {/* Item 2 */}
             <button
-              onClick={() => navigate("/mitra-lokal")}
+              onClick={() => navigate("/mitra")}
               className="bg-gray-700 text-white rounded-xl p-4 flex flex-col items-start hover:bg-gray-800 transition"
             >
               <span className="text-blue-400 mb-2">💻</span>
